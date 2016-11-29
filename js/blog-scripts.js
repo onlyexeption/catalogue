@@ -3,7 +3,11 @@ function startApp() {
 
     $('#linkLogin').click(showLoginForm);
     $('#linkRegister').click(showRegisterForm);
+    $('#linkHome').click(showHomeView);
 
+    function showHomeView(){
+        showView('banner');
+    }
     function showLoginForm(){
         showView('viewLogin');
     }
