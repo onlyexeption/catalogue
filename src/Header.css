@@ -1,0 +1,17 @@
+/**
+ * Created by Ivaylo on 12/2/2016.
+ */
+
+.header{
+    background: #EEE;
+}
+
+.header a{
+    display: inline-block;
+    margin: 10px;
+    text-decoration: none;
+}
+
+.header a:hover{
+    background: #EACEFF;
+}
