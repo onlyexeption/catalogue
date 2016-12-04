@@ -6,7 +6,7 @@ class Login extends Component {
   render() {
     return (
       <div className="login-wrapper">
-        <form className="login-login">
+        <form className="login-login" onSubmit={this.submitForm.bind(this)}>
           <p className="login-title">Log in</p>
           <input type="text" placeholder="Username" autoFocus />
           <i className="fa fa-user" />
@@ -20,6 +20,11 @@ class Login extends Component {
         <Link to="/">Back to home</Link>
       </div>
     )
+  }
+
+  submitForm(event) {
+    event.preventDefault()
+    console.log(event.target)
   }
 }
 

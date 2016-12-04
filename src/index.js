@@ -4,15 +4,13 @@ import { Router, Route, hashHistory } from 'react-router'
 import App from './App'
 import LoginView from './Views/loginView'
 import RegisterView from './Views/registerView'
-import CreateArticleView from './Views/createArticleView'
-import ContactView from './Views/contactView'
+// import CreateArticleView from './Views/createArticleView'
+// import ContactView from './Views/contactView'
 
 ReactDOM.render((
   <Router history={hashHistory}>
     <Route path="/" component={App}/>
     <Route path="/view/login" component={LoginView}/>
     <Route path="/view/register" component={RegisterView}/>
-    <Route path="/view/create" component={CreateArticleView}/>
-    <Route path="/view/contact" component={ContactView}/>
   </Router>
 ), document.getElementById('catalogue-app'));

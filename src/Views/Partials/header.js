@@ -10,7 +10,7 @@ class Header extends Component {
             <ul>
               <li><Link to="/">Home</Link></li>
               <li><Link to="/view/contact">Contact us</Link></li>
-              <li><Link to="/view/create">Create new article</Link></li>
+              <li><Link to="/view/about">About us</Link></li>
             </ul>
           </nav>
       </header>

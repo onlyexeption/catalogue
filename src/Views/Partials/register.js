@@ -6,11 +6,13 @@ class Register extends Component {
   render() {
     return (
       <div className="login-wrapper">
-        <form className="login-login">
+        <form className="login-login" onSubmit={this.props.onSubmit}>
           <p className="login-title">Register</p>
-          <input type="text" placeholder="Username" autoFocus />
+          <input type="text" name="username" placeholder="Username" onChange={this.props.onChange} value={this.props.username} autoFocus />
           <i className="fa fa-user" />
-          <input type="password" placeholder="Password" />
+          <input type="password" name="password" placeholder="Password" onChange={this.props.onChange} value={this.props.password} />
+          <i className="fa fa-key" />
+          <input type="password" name="repeat" placeholder="Password" onChange={this.props.onChange} value={this.props.repeat} />
           <i className="fa fa-key" />
           <button>
             <i className="login-spinner" />
