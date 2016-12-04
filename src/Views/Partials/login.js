@@ -12,7 +12,7 @@ class Login extends Component {
           <i className="fa fa-user" />
           <input type="password" placeholder="Password" />
           <i className="fa fa-key" />
-          <button>
+          <button id="buttonLogin">
             <i className="login-spinner" />
             <span className="login-state">Log in</span>
           </button>

@@ -8,7 +8,9 @@ class Header extends Component {
         <h1>Through simplicity comes beauty.</h1>
           <nav id="nav">
             <ul>
-              <li><Link to="/about">About</Link></li>
+              <li><Link to="/">Home</Link></li>
+              <li><Link to="/view/contact">Contact us</Link></li>
+              <li><Link to="/view/create">Create new article</Link></li>
             </ul>
           </nav>
       </header>

@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Link } from 'react-router'
 
 class Footer extends Component {
   render() {
@@ -18,7 +19,7 @@ class Footer extends Component {
               </div>
             </div>
             <div className="6u">
-              <h2>About the team</h2>
+              <h2><Link to="/about">About the team</Link></h2>
               <p>Buyme™ is a team of four motivated young men. We strive to deliver great outcomes.</p>
               <ul className="icons">
                 <li><a href="https://www.facebook.com/SoftwareUniversity/?fref=ts" className="icon fa-facebook"><span className="label">Facebook</span></a></li>
