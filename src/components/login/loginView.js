@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import Login from './Partials/login'
+import Login from './login'
 // import Header from './Partials/header'
 // import Main from './Partials/main'
 
