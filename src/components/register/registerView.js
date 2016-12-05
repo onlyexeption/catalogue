@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import Register from './register'
+import {register} from '../../models/userOperations'
 
 class RegisterView extends Component {
     constructor(props) {
@@ -11,24 +12,26 @@ class RegisterView extends Component {
         };
         this.onChangeHandler = this.onChangeHandler.bind(this);
         this.onSubmitHandler = this.onSubmitHandler.bind(this);
+        RegisterView.onRegisterSuccess = RegisterView.onRegisterSuccess.bind(this);
+
     }
     onChangeHandler(event) {
         event.preventDefault();
-        alert('change');
         let newState = {};
         newState[event.target.name] = [event.target.value];
         this.setState(newState);
     }
+
     onSubmitHandler(event) {
         event.preventDefault();
-        alert('submit');
-        let username = this.state.username;
-        let password = this.state.password;
-        let repeat = this.state.repeat;
-        console.log(username);
-        console.log(password);
-        console.log(repeat);
+        console.log(this.state.username[0]);
+        register(this.state.username[0], this.state.password[0], RegisterView.onRegisterSuccess);
     }
+
+    static onRegisterSuccess(result){
+        alert('Successs!')
+    }
+
   render() {
     return (
       <section id="RegisterView">

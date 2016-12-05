@@ -11,8 +11,8 @@ class Main extends Component {
               <h2>Welcome to our blog.</h2>
               <p />
               <ul className="actions">
-                <li id="linkLogin"><Link to="/view/login" className="button big alt">Sign In</Link></li>
-                <li id="linkRegister"><Link to="/view/register" className="button big alt">Sign Up</Link></li>
+                <li id="linkLogin"><Link to="/login" className="button big alt">Sign In</Link></li>
+                <li id="linkRegister"><Link to="/register" className="button big alt">Sign Up</Link></li>
               </ul>
             </div>
           </section>

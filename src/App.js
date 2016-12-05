@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import HomeView from './Views/homeView'
+import HomeView from './components/blog/homeView'
 
 class App extends Component {
   render() {

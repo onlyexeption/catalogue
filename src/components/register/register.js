@@ -20,10 +20,10 @@ class Register extends Component {
           <input type="password" name="repeat" placeholder="Password" onChange={this.props.onChange} value={this.props.repeat}  required="required" />
 
           <i className="fa fa-key" />
-          <button>
-            <i className="login-spinner" />
-            <span className="login-state">Register</span>
-          </button>
+            <button>
+                <i className="login-spinner" />
+                <span className="login-state">Register</span>
+            </button>
         </form>
         <Link to="/">Back to home</Link>
       </div>
