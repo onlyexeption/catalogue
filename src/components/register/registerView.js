@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import Register from './register'
-import {register} from './../../Models/userOperations'
+import {register} from './../../models/userOperations'
 
 class RegisterView extends Component {
     constructor(props) {

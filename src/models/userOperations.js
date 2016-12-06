@@ -21,6 +21,7 @@ function login(username, password, callback){
     requester.post('user','login', 'basic',userData)
         .then( (response)=>{
             saveSession(response);
+            console.log(response);
             callback(true);
         })
 
@@ -40,7 +41,6 @@ function register(username, password, callback){
         })
 
 }
-
 function logout() {
     sessionStorage.clear();
 }

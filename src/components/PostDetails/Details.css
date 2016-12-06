@@ -1,0 +1,8 @@
+#postt-box{
+    float:left;
+    border:3px solid black;
+    display:block;
+}
+span{
+    font-size:15pt;
+}
