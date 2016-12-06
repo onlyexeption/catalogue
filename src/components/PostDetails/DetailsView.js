@@ -18,13 +18,11 @@ class DetailsView extends Component {
         this.setState({posts: response});
     }
     render() {
-        let a = viewPosts()
-        console.log(a);
         return(
             <div>
                 <h1>Details Page</h1>
                 {this.state.posts.map((t,i)=>{
-                    return <DetailsController key={i} title={t.title} desc={t.desc} teamId = {t._id}/>
+                    return <DetailsController key={i} title={t.title} desc={t.desc} teamId={t._id}/>
                 })}
             </div>
         );
