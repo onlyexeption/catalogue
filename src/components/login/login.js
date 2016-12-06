@@ -8,9 +8,9 @@ class Login extends Component {
       <div className="login-wrapper">
         <form className="login-login" onSubmit={this.submitForm.bind(this)}>
           <p className="login-title">Log in</p>
-          <input type="text" placeholder="Username" autoFocus />
+          <input type="text" placeholder="Username" onChange={this.props.onChange} required="required" value={this.props.username}autoFocus />
           <i className="fa fa-user" />
-          <input type="password" placeholder="Password" />
+          <input type="password" placeholder="Password" onChange={this.props.onChange} value={this.props.password}required="required"/>
           <i className="fa fa-key" />
           <button id="buttonLogin">
             <i className="login-spinner" />
