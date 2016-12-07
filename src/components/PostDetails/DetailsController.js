@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 //import {viewPosts} from '../../models/postOperations'
 import './Details.css'
+import '../../../public/css/style.css'
 import {Link} from 'react-router'
 
 class DetailsController extends Component {

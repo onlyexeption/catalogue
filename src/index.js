@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { Router, Route, hashHistory } from 'react-router'
 import App from './App'
-import LoginView from './components/login/loginView'
+import LoginPage from './components/login/LoginPage'
 import RegisterView from './components/register/registerView'
 import PostsView from './components/posts/allPosts'
 import CreateForm from './components/createNew/CreatePage'
@@ -14,7 +14,7 @@ import Edit from './components/editPost/EditPage'
 ReactDOM.render((
   <Router history={hashHistory}>
     <Route path="/" component={App}/>
-    <Route path="/login" component={LoginView}/>
+    <Route path="/login" component={LoginPage}/>
       <Route path="/register" component={RegisterView}/>
       <Route path="/posts" component={PostsView}/>
       <Route path="/createNew" component={CreateForm}/>

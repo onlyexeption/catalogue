@@ -1,8 +1,38 @@
-#postt-box{
-    float:left;
-    border:3px solid black;
-    display:block;
+#whole h1{
+    text-align:center;
+    background-color: lightblue;
+    border-bottom:1pt solid black;
+    font-size:20pt;
+    padding:20pt;
 }
-span{
+#postt-box{
+    border-radius: 15pt;
+    background-color:lightblue;
+    padding:10pt;
+    margin:10pt;
+    float:left;
+    border:1px solid black;
+    display:block;
+    width:300pt;
+}
+#whole{
+    background-color: #a9cc3d;
+}
+#whole span{
     font-size:15pt;
+    color: black;
+}
+#details{
+    width:100%;
+}
+.backButton{
+    display:block;
+    text-align: center;
+    width:100%;
+    overflow: auto;
+    background-color: red;
+}
+
+.backButton{
+    color:white;
 }

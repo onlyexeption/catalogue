@@ -1,19 +1,17 @@
 import React, { Component } from 'react'
-import Register from './register'
-import {register} from './../../models/userOperations'
+import LoginForm from './LoginForm'
+import {login} from '../../models/userOperations'
 
-class RegisterView extends Component {
+class LoginPage extends Component {
     constructor(props) {
         super(props);
         this.state = {
             username: '',
-            password: '',
-            repeat: ''
+            password:''
         };
         this.onChangeHandler = this.onChangeHandler.bind(this);
         this.onSubmitHandler = this.onSubmitHandler.bind(this);
-        RegisterView.onRegisterSuccess = RegisterView.onRegisterSuccess.bind(this);
-
+        this.onLoginSuccess = this.onLoginSuccess.bind(this);
     }
     onChangeHandler(event) {
         event.preventDefault();
@@ -22,25 +20,26 @@ class RegisterView extends Component {
         this.setState(newState);
     }
 
-    onSubmitHandler(event) {
-        event.preventDefault();
-        console.log(this.state.username[0]);
-        register(this.state.username[0], this.state.password[0], RegisterView.onRegisterSuccess);
-    }
-
-    static onRegisterSuccess(result){
+    onLoginSuccess(result){
         this.context.router.push("/")
     }
+    onSubmitHandler(event) {
+        event.preventDefault();
+        login(this.state.username[0],this.state.password[0],this.onLoginSuccess)
+        /*console.log(this.state.username[0])
+        console.log(this.state.password[0])
+        alert('Submit')*/
+    }
+
 
   render() {
     return (
-      <section id="RegisterView">
-        <Register
+      <section id="LoginView">
+        <LoginForm
            username={this.state.username}
            password={this.state.password}
-           repeat={this.state.repeat}
            onChange={this.onChangeHandler}
-           onSubmit={this.onSubmitHandler}
+           onSubmitt={this.onSubmitHandler}
         />
       </section>
     )
@@ -48,7 +47,7 @@ class RegisterView extends Component {
 
 }
 
-RegisterView.contextTypes = {
+LoginPage.contextTypes = {
     router: React.PropTypes.object
 };
-export default RegisterView
+export default LoginPage

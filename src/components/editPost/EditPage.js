@@ -39,7 +39,7 @@ class EditPage extends Component {
     }
 
     onEditSuccess(result){
-        alert('Success!')
+        this.context.router.push("/")
     }
 
   render() {
@@ -57,4 +57,8 @@ class EditPage extends Component {
 
 }
 
+
+EditPage.contextTypes = {
+    router: React.PropTypes.object
+};
 export default EditPage

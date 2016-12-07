@@ -30,7 +30,7 @@ class CreateForm extends Component {
 
             <button>
                 <i className="login-spinner" />
-                <span className="login-state">Register</span>
+                <span className="login-state">Create it!</span>
             </button>
         </form>
         <Link to="/">Back to home</Link>
@@ -40,3 +40,6 @@ class CreateForm extends Component {
 }
 
 export default CreateForm
+CreateForm.contextTypes = {
+    router: React.PropTypes.object
+};
